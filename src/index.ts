@@ -2,10 +2,9 @@ import { useRef, useEffect } from 'react';
 import { 
   // API
   Parent, 
-  Child,
+  IFrame,
   // Types
   IParent,
-  IFrame,
   ParentOpts,
   IFrameOpts,
 } from 'liaison-core';
@@ -27,29 +26,29 @@ export function useParent({ iframeOpts, effects }: ParentOpts): IParentHook {
   }, []);
 
   return {
-    callIFrameEffect: _requestCallToChild,
+    callIFrameEffect: _requestCallToIFrame,
   }
 
-  function _requestCallToChild(args: any) {
+  function _requestCallToIFrame(args: any) {
     if (parentRef.current) {
       parentRef.current.callIFrameEffect(args);
     }
   }
 }
 
-export function useChild({ parentOrigin, effects }: IFrameOpts) {
-  const childRef = useRef<IFrame | null>(null);
+export function useIFrame({ parentOrigin, effects }: IFrameOpts) {
+  const iFrameModelRef = useRef<IFrame | null>(null);
 
   useEffect(() => {
-    childRef.current = Child({
+    iFrameModelRef.current = IFrame({
       parentOrigin,
       effects,
     });
-    childRef.current.init();
+    iFrameModelRef.current.init();
     return () => {
-      if (childRef.current) {
-        childRef.current.destroy();
-        childRef.current = null
+      if (iFrameModelRef.current) {
+        iFrameModelRef.current.destroy();
+        iFrameModelRef.current = null
       }
     };
   }, []);
@@ -59,8 +58,8 @@ export function useChild({ parentOrigin, effects }: IFrameOpts) {
   }
 
   function _requestCallToParent(args: any) {
-    if (childRef.current) {
-      childRef.current.callParentEffect(args);
+    if (iFrameModelRef.current) {
+      iFrameModelRef.current.callParentEffect(args);
     }
   }
 }

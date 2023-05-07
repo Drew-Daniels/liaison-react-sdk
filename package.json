@@ -1,6 +1,6 @@
 {
   "name": "liaison-react",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Drew Daniels",
   "description": "React hook library for Liaison",
   "license": "MIT",
@@ -32,6 +32,9 @@
     "react-dom": "^18.2.0",
     "typescript": "^5.0.2"
   },
+  "dependencies": {
+    "liaison-core": "^0.0.4"
+  },
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.18.0"
@@ -50,8 +53,5 @@
     "embedded",
     "react",
     "cors"
-  ],
-  "dependencies": {
-    "liaison-core": "^0.0.3"
-  }
+  ]
 }
