@@ -1,6 +1,6 @@
 {
   "name": "liaison-react",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Drew Daniels",
   "description": "React hook library for Liaison",
   "license": "MIT",
