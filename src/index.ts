@@ -23,6 +23,12 @@ export function useParent({ iframeOpts, effects }: ParentOpts): IParentHook {
       effects,
     })
     parentRef.current.init();
+    return () => {
+      if (parentRef.current) {
+        parentRef.current.destroy();
+        parentRef.current = null;
+      }
+    }
   }, []);
 
   return {
