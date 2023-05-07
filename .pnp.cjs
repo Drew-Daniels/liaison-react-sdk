@@ -28,7 +28,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
-            ["@drew-daniels/liaison-core", "npm:0.0.7"],\
             ["@types/react", "npm:18.2.5"],\
             ["@types/react-dom", "npm:18.2.3"],\
             ["@typescript-eslint/eslint-plugin", "virtual:0696b93d855e3454e539e91366aab3aef0c87dc259069fd8b0a5a3a492d7f48fe78beae1b3be68404fca864ed96946b823bc4a95be4e2461c71ec2903c2a80cc#npm:5.59.2"],\
@@ -36,20 +35,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint", "npm:8.39.0"],\
             ["eslint-plugin-react-hooks", "virtual:0696b93d855e3454e539e91366aab3aef0c87dc259069fd8b0a5a3a492d7f48fe78beae1b3be68404fca864ed96946b823bc4a95be4e2461c71ec2903c2a80cc#npm:4.6.0"],\
             ["eslint-plugin-react-refresh", "virtual:0696b93d855e3454e539e91366aab3aef0c87dc259069fd8b0a5a3a492d7f48fe78beae1b3be68404fca864ed96946b823bc4a95be4e2461c71ec2903c2a80cc#npm:0.3.5"],\
+            ["liaison-core", "npm:0.0.3"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:0696b93d855e3454e539e91366aab3aef0c87dc259069fd8b0a5a3a492d7f48fe78beae1b3be68404fca864ed96946b823bc4a95be4e2461c71ec2903c2a80cc#npm:18.2.0"],\
             ["typescript", "patch:typescript@npm%3A5.0.4#~builtin<compat/typescript>::version=5.0.4&hash=b5f058"]\
           ],\
           "linkType": "SOFT"\
-        }]\
-      ]],\
-      ["@drew-daniels/liaison-core", [\
-        ["npm:0.0.7", {\
-          "packageLocation": "./.yarn/cache/@drew-daniels-liaison-core-npm-0.0.7-e9d4bc431e-a9a9420d35.zip/node_modules/@drew-daniels/liaison-core/",\
-          "packageDependencies": [\
-            ["@drew-daniels/liaison-core", "npm:0.0.7"]\
-          ],\
-          "linkType": "HARD"\
         }]\
       ]],\
       ["@eslint-community/eslint-utils", [\
@@ -1199,12 +1190,20 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["liaison-core", [\
+        ["npm:0.0.3", {\
+          "packageLocation": "./.yarn/cache/liaison-core-npm-0.0.3-b0bf71a42c-6c1db172df.zip/node_modules/liaison-core/",\
+          "packageDependencies": [\
+            ["liaison-core", "npm:0.0.3"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["liaison-react", [\
         ["workspace:.", {\
           "packageLocation": "./",\
           "packageDependencies": [\
             ["liaison-react", "workspace:."],\
-            ["@drew-daniels/liaison-core", "npm:0.0.7"],\
             ["@types/react", "npm:18.2.5"],\
             ["@types/react-dom", "npm:18.2.3"],\
             ["@typescript-eslint/eslint-plugin", "virtual:0696b93d855e3454e539e91366aab3aef0c87dc259069fd8b0a5a3a492d7f48fe78beae1b3be68404fca864ed96946b823bc4a95be4e2461c71ec2903c2a80cc#npm:5.59.2"],\
@@ -1212,6 +1211,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint", "npm:8.39.0"],\
             ["eslint-plugin-react-hooks", "virtual:0696b93d855e3454e539e91366aab3aef0c87dc259069fd8b0a5a3a492d7f48fe78beae1b3be68404fca864ed96946b823bc4a95be4e2461c71ec2903c2a80cc#npm:4.6.0"],\
             ["eslint-plugin-react-refresh", "virtual:0696b93d855e3454e539e91366aab3aef0c87dc259069fd8b0a5a3a492d7f48fe78beae1b3be68404fca864ed96946b823bc4a95be4e2461c71ec2903c2a80cc#npm:0.3.5"],\
+            ["liaison-core", "npm:0.0.3"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:0696b93d855e3454e539e91366aab3aef0c87dc259069fd8b0a5a3a492d7f48fe78beae1b3be68404fca864ed96946b823bc4a95be4e2461c71ec2903c2a80cc#npm:18.2.0"],\
             ["typescript", "patch:typescript@npm%3A5.0.4#~builtin<compat/typescript>::version=5.0.4&hash=b5f058"]\

@@ -8,7 +8,7 @@ import {
   IFrame,
   ParentOpts,
   IFrameOpts,
-} from '@drew-daniels/liaison-core';
+} from 'liaison-core';
 
 export type IParentHook = Omit<IParent, ILifecycles>;
 export type IChildHook = Omit<IFrame, ILifecycles>;
