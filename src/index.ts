@@ -23,7 +23,6 @@ export function useParent({ iframeId, iframeSrc, effects }: ParentOpts): IParent
       iframeSrc,
       effects,
     })
-    parentRef.current.init();
     return () => {
       if (parentRef.current) {
         parentRef.current.destroy();
@@ -51,7 +50,7 @@ export function useIFrame({ parentOrigin, effects }: IFrameOpts) {
       parentOrigin,
       effects,
     });
-    iFrameModelRef.current.init();
+
     return () => {
       if (iFrameModelRef.current) {
         iFrameModelRef.current.destroy();
