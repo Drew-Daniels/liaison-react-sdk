@@ -892,10 +892,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"liaison-core@npm:^0.0.14":
-  version: 0.0.14
-  resolution: "liaison-core@npm:0.0.14"
-  checksum: 7ac851302e2ae99fdf6cad3e6ee24265587394d053395ee8e268ae35b51dc30a975bd1705f5ff61d755375cfb180d9ff0d7ff3977c83f308b006ab84418b191d
+"liaison-core@npm:^0.0.15":
+  version: 0.0.15
+  resolution: "liaison-core@npm:0.0.15"
+  checksum: 4a09aa5921a424c87b077420e9f33b16b8bebd77ed8faad637da5e5da4f155282c5defda6c463df7032794d6e388a127ff56574d3615ce37c3dc560a4f7a98c7
   languageName: node
   linkType: hard
 
@@ -910,7 +910,7 @@ __metadata:
     eslint: ^8.38.0
     eslint-plugin-react-hooks: ^4.6.0
     eslint-plugin-react-refresh: ^0.3.4
-    liaison-core: ^0.0.14
+    liaison-core: ^0.0.15
     react: ^18.2.0
     react-dom: ^18.2.0
     typescript: ^5.0.2
