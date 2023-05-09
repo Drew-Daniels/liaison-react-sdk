@@ -14,13 +14,15 @@ export type IChildHook = Omit<IFrame, ILifecycles>;
 
 type ILifecycles = "init" | "destroy";
 
-export function useParent({ iframeId, iframeSrc, effects }: ParentOpts): IParentHook {
+export function useParent({ iframe: { id, src }, effects }: ParentOpts): IParentHook {
   const parentRef = useRef<IParent | null>(null);
 
   useEffect(() => {
     parentRef.current = Parent({
-      iframeId,
-      iframeSrc,
+      iframe: {
+        id,
+        src,
+      },
       effects,
     })
     return () => {
