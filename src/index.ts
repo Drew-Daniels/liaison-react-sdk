@@ -7,6 +7,7 @@ import {
   IParent,
   ParentOpts,
   IFrameOpts,
+  Signal,
 } from 'liaison-core';
 
 export type IParentHook = Omit<IParent, ILifecycles>;
@@ -34,12 +35,12 @@ export function useParent({ iframe: { id, src }, effects }: ParentOpts): IParent
   }, []);
 
   return {
-    callIFrameEffect: _requestCallToIFrame,
+    callIFrameEffect,
   }
 
-  function _requestCallToIFrame(args: any) {
+  function callIFrameEffect(signal: Signal) {
     if (parentRef.current) {
-      parentRef.current.callIFrameEffect(args);
+      parentRef.current.callIFrameEffect(signal);
     }
   }
 }
@@ -62,12 +63,12 @@ export function useIFrame({ parentOrigin, effects }: IFrameOpts) {
   }, []);
 
   return {
-    callParentEffect: _requestCallToParent,
+    callParentEffect,
   }
 
-  function _requestCallToParent(args: any) {
+  function callParentEffect(signal: Signal) {
     if (iFrameModelRef.current) {
-      iFrameModelRef.current.callParentEffect(args);
+      iFrameModelRef.current.callParentEffect(signal);
     }
   }
 }
