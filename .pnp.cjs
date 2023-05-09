@@ -35,7 +35,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint", "npm:8.39.0"],\
             ["eslint-plugin-react-hooks", "virtual:0696b93d855e3454e539e91366aab3aef0c87dc259069fd8b0a5a3a492d7f48fe78beae1b3be68404fca864ed96946b823bc4a95be4e2461c71ec2903c2a80cc#npm:4.6.0"],\
             ["eslint-plugin-react-refresh", "virtual:0696b93d855e3454e539e91366aab3aef0c87dc259069fd8b0a5a3a492d7f48fe78beae1b3be68404fca864ed96946b823bc4a95be4e2461c71ec2903c2a80cc#npm:0.3.5"],\
-            ["liaison-core", "npm:0.0.13"],\
+            ["liaison-core", "npm:0.0.14"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:0696b93d855e3454e539e91366aab3aef0c87dc259069fd8b0a5a3a492d7f48fe78beae1b3be68404fca864ed96946b823bc4a95be4e2461c71ec2903c2a80cc#npm:18.2.0"],\
             ["typescript", "patch:typescript@npm%3A5.0.4#~builtin<compat/typescript>::version=5.0.4&hash=b5f058"]\
@@ -1191,10 +1191,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["liaison-core", [\
-        ["npm:0.0.13", {\
-          "packageLocation": "./.yarn/cache/liaison-core-npm-0.0.13-643f8df682-93139ce43e.zip/node_modules/liaison-core/",\
+        ["npm:0.0.14", {\
+          "packageLocation": "./.yarn/cache/liaison-core-npm-0.0.14-48c67c2fd4-7ac851302e.zip/node_modules/liaison-core/",\
           "packageDependencies": [\
-            ["liaison-core", "npm:0.0.13"]\
+            ["liaison-core", "npm:0.0.14"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -1211,7 +1211,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint", "npm:8.39.0"],\
             ["eslint-plugin-react-hooks", "virtual:0696b93d855e3454e539e91366aab3aef0c87dc259069fd8b0a5a3a492d7f48fe78beae1b3be68404fca864ed96946b823bc4a95be4e2461c71ec2903c2a80cc#npm:4.6.0"],\
             ["eslint-plugin-react-refresh", "virtual:0696b93d855e3454e539e91366aab3aef0c87dc259069fd8b0a5a3a492d7f48fe78beae1b3be68404fca864ed96946b823bc4a95be4e2461c71ec2903c2a80cc#npm:0.3.5"],\
-            ["liaison-core", "npm:0.0.13"],\
+            ["liaison-core", "npm:0.0.14"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:0696b93d855e3454e539e91366aab3aef0c87dc259069fd8b0a5a3a492d7f48fe78beae1b3be68404fca864ed96946b823bc4a95be4e2461c71ec2903c2a80cc#npm:18.2.0"],\
             ["typescript", "patch:typescript@npm%3A5.0.4#~builtin<compat/typescript>::version=5.0.4&hash=b5f058"]\
