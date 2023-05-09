@@ -33,7 +33,7 @@
     "typescript": "^5.0.2"
   },
   "dependencies": {
-    "liaison-core": "^0.0.15"
+    "liaison-core": "^0.0.16"
   },
   "peerDependencies": {
     "react": ">=16.8.0",
